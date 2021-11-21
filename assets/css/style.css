@@ -21,10 +21,17 @@ body{
     top:344px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
 } 
+#start:hover {
+    background-color: hotpink;
+}
 #highscores{
+    font-style: bold;
     color:hotpink;
     position: absolute;
     top: 22px;
     display: inline;
     left: 30px;
+}
+#highscores:hover{
+    color: purple;
 }

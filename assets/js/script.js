@@ -41,3 +41,5 @@ choice4:'Cascading Style Sheet',
 correct:'4'
     }
 ];
+
+document.getElementById('start').addEventListener("click");
