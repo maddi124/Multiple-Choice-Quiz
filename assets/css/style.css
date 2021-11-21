@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+#start {
+
+   display: inline;
+   justify-content: center;
+   align-content: center;
+    margin: auto;
+    color: white;
+    background-color: purple;
+   font-size: 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+    position: relative;
+    left: 43%;
+    top:344px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+} 
+#highscores{
+    color:hotpink;
+    position: absolute;
+    top: 22px;
+    display: inline;
+    left: 30px;
+}
