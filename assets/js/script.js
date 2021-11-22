@@ -1,13 +1,14 @@
-var startButton = document.querySelector("#start"); 
-var quiz = document.querySelector("#quiz"); 
-var question = document.querySelector("#question"); 
-var counter = document.querySelector("#counter");
-var choice1 =document.querySelector("#1");
-var choice2 =document.querySelector("#2");
-var choice3 =document.querySelector("#3");
-var choice4 =document.querySelector("#4");
-var score = document.querySelector("#scorecontainer");
-var questions = [
+var startButton = document.getElementById('start'); 
+var quiz = document.getElementById('quiz'); 
+var question = document.getElementById('question'); 
+var counter = document.getElementById('counter');
+var choice1 =document.getElementById('1');
+var choice2 =document.getElementById('#2');
+var choice3 =document.getElementById('3');
+var choice4 =document.getElementById('4');
+var score = document.getElementById("#scorecontainer");
+
+var questionschoice = [
     {
     question:'What does HTML stand for?',
     choice1:'HyperText Markup Language',
@@ -42,4 +43,9 @@ correct:'4'
     }
 ];
 
-document.getElementById('start').addEventListener("click");
+function startquiz(){
+
+}
+
+
+document.getElementById('start').addEventListener("click",startquiz);

@@ -6,24 +6,30 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+ <div id ="container">
 <div id="highscores">View High Scores</a></div>
-
-<button id= "start">Start Quiz</button>
-
-<div id= "quiz" style= "display : none;">
-<div id= "question"><p>Question</p></div>
-<div id= "timer"><p>Timer:</p>
-    <div id="counter">60</div>
+<div id= "timer"></div>
+<div id= "question">
+    <h1>Coding Quiz Challenge</h1>
+    <p>Try to answer the following code-related questions within
+        the time limit. <br>Keep in mind that incorrect answers will 
+        penalize your <br>score/time by ten seconds!
+    </p>
+<ul id= "choices"></ul>
+<button id="start" onclick="startquiz()">Start Quiz</button>
 </div>
-<div id= "choices">
-    <div class="answercheck" id="1" onclick="checkanswer(1)">1</div>
-    <div class="answercheck" id="2" onclick="checkanswer(2)">2</div>
-    <div class="answercheck" id="3" onclick="checkanswer(3)">3</div>
-    <div class="answercheck" id="4" onclick="checkanswer(4)">4</div>
-</div>
-<div id = "scorecontainer" style="display : none;"></div>
 </div>
     <script src="assets/js/script.js"></script>
 </body>
 
-</html>
+</html> 
+<!-- <div id = "scorecontainer" style="display : none;"></div>
+</div>
+</div> -->
+<!-- <div id= "quiz" style= "display : none;"> -->
+
+ <!-- <div id="counter">60</div> -->
+<!-- <div class="answercheck" id="1" onclick="checkanswer(1)">1</div>
+    <div class="answercheck" id="2" onclick="checkanswer(2)">2</div>
+    <div class="answercheck" id="3" onclick="checkanswer(3)">3</div>
+    <div class="answercheck" id="4" onclick="checkanswer(4)">4</div>
