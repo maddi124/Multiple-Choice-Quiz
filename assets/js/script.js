@@ -1,12 +1,9 @@
-var startButton = document.getElementById('start'); 
-var quiz = document.getElementById('quiz'); 
-var question = document.getElementById('question'); 
-var counter = document.getElementById('counter');
-var choice1 =document.getElementById('1');
-var choice2 =document.getElementById('#2');
-var choice3 =document.getElementById('3');
-var choice4 =document.getElementById('4');
-var score = document.getElementById("#scorecontainer");
+var startbutton =document.querySelector('#start'); 
+var quiz = document.querySelector('#quiz'); 
+var question = document.querySelector('#question'); 
+var counter = document.querySelector('#count');
+var h1El = document.createElement("h1");
+//var score = document.getElementById("#scorecontainer");
 
 var questionschoice = [
     {
@@ -35,17 +32,33 @@ var questionschoice = [
     },
     {
     question:'What does CSS stand for?',
-choice1:'HyperText Markup Language',
-choice2:'Cooking Style Sheet',
-choice3:'Cat Style Sheet',
-choice4:'Cascading Style Sheet',
-correct:'4'
+    choice1:'HyperText Markup Language',
+    choice2:'Cooking Style Sheet',
+    choice3:'Cat Style Sheet',
+    choice4:'Cascading Style Sheet',
+    correct:'4'
     }
 ];
+ 
+
 
 function startquiz(){
+  var second= 72;
+
+    var timeInterval = setInterval(function(){
+        if (second > 1) {
+            counter.textContent = second;
+            second--;
+        }
+        else if (second === 1){
+            counter.textContent ='Done';
+            second--;
+        }
+        else {
+            counter.textContent = '';
+            clearInterval(timeInterval);
+        }
+    },1000);
 
 }
-
-
-document.getElementById('start').addEventListener("click",startquiz);
+startbutton.addEventListener("click",startquiz);
